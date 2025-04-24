@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eat Turkish</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="../sass/style.css">
+</head>
+<body>
+ 
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-danger px-4 py-3 fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold fs-4" href="#"><img src="../images/Frame 64.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                  <li class="nav-item"><a class="nav-link text-white" href="./menu.html">Menu</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="./news.html">News</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="./about.html">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="./contact.html">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-outline-light rounded-pill px-4 py-1">Log In</button>
+              </div>
+            </div>
+          </nav>
+    </header> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+      
+            <a class="navbar-brand logo" href="../index.html">
+                <img style="width: 100px;" src="../images/Frame 64.svg" alt="Logo">
+             
+            </a>
+      
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="login-btn">Log In</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </header>
+
+<main>
+    <section>
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <!-- Sidebar Menu -->
+                    <div class="col-lg-3 col-md-4 col-12 mb-4">
+                        <div class="sidebar">
+                            <h3>Our Regular Menu Pack</h3>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-category="all">All</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-category="kebabs">Kebabs</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-category="pides">Pides</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-category="burgers">Burgers</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-category="other-dishes">Other Dishes</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-category="sides">Sides</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-category="drinks">Drinks</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-category="desserts">Desserts</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-category="meal-deals">Meal Deals</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <!-- Menu Items -->
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="row" id="menu-items">
+                            <!-- Existing Cards -->
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="kebabs">
+                                <div class="card">
+                                    <img src="../images/kebab.jpg" class="card-img-top" alt="Shish Kebab">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Barbecue Shish Kebab Shashlik</h5>
+                                        <p class="card-text">$12.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="kebabs">
+                                <div class="card">
+                                    <img src="../images/kebab.jpg" class="card-img-top" alt="Shish Kebab">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Barbecue Shish Kebab Shashlik</h5>
+                                        <p class="card-text">$12.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="pides">
+                                <div class="card">
+                                    <img src="../images/pides.jpg" class="card-img-top" alt="Pide">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Turkish Pide</h5>
+                                        <p class="card-text">$10.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="burgers">
+                                <div class="card">
+                                    <img src="../images/burger.jpg  " class="card-img-top" alt="Burger">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Turkish Burger</h5>
+                                        <p class="card-text">$8.00</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- New Cards (10 Additional) -->
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="kebabs">
+                                <div class="card">
+                                    <img src="../images/kebab.jpg" class="card-img-top" alt="Adana Kebab">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Adana Kebab</h5>
+                                        <p class="card-text">$14.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="pides">
+                                <div class="card">
+                                    <img src="../images/pides.jpg" class="card-img-top" alt="Cheese Pide">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Cheese Pide</h5>
+                                        <p class="card-text">$11.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="burgers">
+                                <div class="card">
+                                    <img src="../images/gamburger.svg" class="card-img-top" alt="Spicy Burger">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Spicy Turkish Burger</h5>
+                                        <p class="card-text">$9.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="other-dishes">
+                                <div class="card">
+                                    <img src="../images/shourmaa.jpg" class="card-img-top" alt="Doner">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Chicken Doner</h5>
+                                        <p class="card-text">$13.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="sides">
+                                <div class="card">
+                                    <img src="../images/Kartof-fri-1-1.jpg" class="card-img-top" alt="Fries">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">French Fries</h5>
+                                        <p class="card-text">$4.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="drinks">
+                                <div class="card">
+                                    <img src="../images/Ayran-FE-anons-_1_.jpg" class="card-img-top" alt="Ayran">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Ayran</h5>
+                                        <p class="card-text">$3.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="desserts">
+                                <div class="card">
+                                    <img src="../images/baklava.jpg" class="card-img-top" alt="Baklava">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Baklava</h5>
+                                        <p class="card-text">$5.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="meal-deals">
+                                <div class="card">
+                                    <img src="../images/comboo.jpg" class="card-img-top" alt="Combo Meal">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Kebab Combo Meal</h5>
+                                        <p class="card-text">$20.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="kebabs">
+                                <div class="card">
+                                    <img src="../images/kebab.jpg" class="card-img-top" alt="Lamb Kebab">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Lamb Shish Kebab</h5>
+                                        <p class="card-text">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="pides">
+                                <div class="card">
+                                    <img src="../images/pides.jpg" class="card-img-top" alt="Meat Pide">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Meat Pide</h5>
+                                        <p class="card-text">$12.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4 menu-item" data-category="pides">
+                                <div class="card">
+                                    <img src="../images/pides.jpg" class="card-img-top" alt="Meat Pide">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Meat Pide</h5>
+                                        <p class="card-text">$12.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+<section>
+    <div class="photo-section">
+        <div class="row">
+            <div class="col-md-6 text-block">
+                <div class="social-tag">Instagram</div>
+                <h2>Photo Gallery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+                <a href="#" class="see-more">View More</a>
+            </div>
+            <div class="col-md-6">
+                <div class="image-grid">
+                    <div class="photo-item">
+                        <img src="../images/baklava.jpg" alt="Gallery Image 1">
+                        <div class="overlay-effect">
+                            <span class="social-icon"><img src="../images/instagram64.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="../images/michele-blackwell-rAyCBQTH7ws-unsplash 2.svg" alt="Gallery Image 2">
+                        <div class="overlay-effect">
+                            <span class="social-icon"><img src="../images/instagram64.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.svg" alt="Gallery Image 3">
+                        <div class="overlay-effect">
+                            <span class="social-icon"><img src="../images/instagram64.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Gallery Image 4">
+                        <div class="overlay-effect">
+                            <span class="social-icon"><img src="../images/instagram64.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="newsletter-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="newsletter-box text-center">
+                    <h2 class="newsletter-title">SUBSCRIBE TO OUR NEWSLETTER</h2>
+                    <p class="newsletter-subtitle">And never miss updates!</p>
+                    <form class="newsletter-form d-flex justify-content-center mt-4">
+                        <input type="email" class="form-control me-2" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="footer-title">CONTACT US</h5>
+                <p class="footer-text">9 W 53rd St, London, NY 10019, UK</p>
+                <p class="footer-text">+1 212-344-1230</p>
+                <p class="footer-text">+1 212-555-1230</p>
+            </div>
+
+   
+            <div class="col-md-4 mb-4 mb-md-0 text-center">
+                <div class="footer-logo mb-3">
+                    <img src="../images/image 2.svg" alt="Eat Turkish Logo" class="img-fluid">
+                </div>
+                <p class="footer-quote">"The best way to find yourself is to lose yourself in the service of others."</p>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-md-0 text-center text-md-end">
+                <h5 class="footer-title">WORKING HOURS</h5>
+                <p class="footer-text">Monday-Friday:<br>08:00 am - 12:00 am</p>
+                <p class="footer-text">Saturday-Sunday:<br>07:00 am - 11:00 pm</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <div class="social-icons mb-3">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-copyright">2022 Pop Online. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

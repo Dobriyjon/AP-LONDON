@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eat Turkish</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="./sass/style.css">
+</head>
+<body>
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark container">
+
+      <a class="navbar-brand logo" href="#">
+          <img style="width: 100px;" src="./images/Frame 64.svg" alt="Logo">
+       
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/news.html">News</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <button class="login-btn">Log In</button>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</header>
+  
+  <!-- Hero Section -->
+<main>
+    <section class="hero-section">
+        <div class="hero-text">
+          <p class="text-uppercase">Chase The New Flavour</p>
+          <h1>The Key To<br>Fine Dining</h1>
+          <p class="text-muted">
+            Sit tellus lobortis sed senectus vivamus molestie.<br>
+            Condimentum volutpat morbi facilisis quam scelerisque sapien.
+          </p>
+          <button class="btn btn-outline-light">Explore Menu</button>
+        </div>
+        <div class="hero-img">
+          <img src="./images/Mask group.svg" alt="Grilled Meat" class="img-fluid">
+        </div>
+      </section>
+
+
+
+      <!-- Popular Dishes Section -->
+<section class="popular-dishes py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-danger fw-bold">Popular Dishes</h2>
+  
+      <div id="dishesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+  
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-3">
+              <!-- Card 1 -->
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="card text-center h-100">
+                  <img src="./images/klipartz 1 (1).svg" class="card-img-top" alt="Dish 1">
+                  <div class="card-body">
+                    <p class="card-title mb-1">Barbecue Shish kebab Shashlik Skewer</p>
+                    <div class="text-warning mb-1">★★★☆☆</div>
+                    <strong class="text-danger">$12.00</strong>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="card text-center h-100">
+                  <img src="./images/klipartz 1 (2).svg" class="card-img-top" alt="Dish 2">
+                  <div class="card-body">
+                    <p class="card-title mb-1">Barbecue Shish kebab Shashlik Skewer</p>
+                    <div class="text-warning mb-1">★★★★☆</div>
+                    <strong class="text-danger">$12.00</strong>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="card text-center h-100">
+                  <img src="./images/klipartz 1.png" class="card-img-top" alt="Dish 3">
+                  <div class="card-body">
+                    <p class="card-title mb-1">Barbecue Shish kebab Shashlik Skewer</p>
+                    <div class="text-warning mb-1">★★★☆☆</div>
+                    <strong class="text-danger">$12.00</strong>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="card text-center h-100">
+                  <img src="./images/klipartz 1.svg" class="card-img-top" alt="Dish 4">
+                  <div class="card-body">
+                    <p class="card-title mb-1">Barbecue Shish kebab Shashlik Skewer</p>
+                    <div class="text-warning mb-1">★★★★☆</div>
+                    <strong class="text-danger">$12.00</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Yana kerak bo‘lsa boshqa carousel-item lar qo‘shsa bo‘ladi -->
+  
+        </div>
+  
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#dishesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-danger rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#dishesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-danger rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="menu-pack py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">Our Regular Menu Pack</h2>
+  
+      <div class="filter-buttons mb-4 d-flex flex-wrap gap-2">
+        <button class="btn btn-filter active" data-filter="all">All</button>
+        <button class="btn btn-filter" data-filter="shawarma">Shawarma</button>
+        <button class="btn btn-filter" data-filter="turk">Turk Kebab</button>
+        <button class="btn btn-filter" data-filter="hamburger">Hamburger Kebab</button>
+        <button class="btn btn-filter" data-filter="doner">Doner Kebab</button>
+        <button class="btn btn-filter" data-filter="shish">Shish Kebab</button>
+        <button class="btn btn-filter" data-filter="pizza">French Fries Pizza</button>
+        <button class="btn btn-filter" data-filter="dessert">Desserts</button>
+      </div>
+  
+      <div class="row g-4 menu-items">
+        <!-- Example Card -->
+        <div class="col-md-3 menu-card" data-category="shawarma">
+          <div class="card text-center p-3 shadow-sm">
+            <img src="./images/sahurma.png" class="card-img-top mx-auto" alt="Shawarma" style="height: 150px; object-fit: contain;">
+            <div class="card-body">
+              <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+              <div class="stars mb-2 text-warning">
+                ★★★★☆
+              </div>
+              <p class="text-danger fw-bold">$12.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 menu-card" data-category="shashlik">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/shashlik.png" class="card-img-top mx-auto" alt="Shashlik" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Hamburger Kebeb">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/gamburger.svg" class="card-img-top mx-auto" alt="Hamburger Kebab " style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Doner kebab">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/sahshlik s fri.png" class="card-img-top mx-auto" alt="Doner kebeb" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+              </div>
+            </div>
+          </div>
+  
+
+          <div class="col-md-3 menu-card" data-category="Shish Kebab">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/1q 4 p.png" class="card-img-top mx-auto" alt="Shish Kebeb" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+                <p class="text-muted">Delicious and tender Doner Kebab served with fresh vegetables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Pizza">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/pizza.png" class="card-img-top mx-auto" alt="Pizza" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+                <p class="text-muted">Delicious and tender Doner Kebab served with fresh vegetables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Barbeciu">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/sahshlik s fri.png" class="card-img-top mx-auto" alt="Barbeciu" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+                <p class="text-muted">Delicious and tender Doner Kebab served with fresh vegetables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Desserts">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/2q2p.png" class="card-img-top mx-auto" alt="Desserts" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+                <p class="text-muted">Delicious and tender Doner Kebab served with fresh vegetables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Fries">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/2q3p.png" class="card-img-top mx-auto" alt="Fries" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+                <p class="text-muted">Delicious and tender Doner Kebab served with fresh vegetables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Hod-Dog">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/sahshlik s fri.png" class="card-img-top mx-auto" alt="Hod-Dog" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+                <p class="text-muted">Delicious and tender Doner Kebab served with fresh vegetables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Sendwich">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/2q3p.png" class="card-img-top mx-auto" alt="Sendwich" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+                <p class="text-muted">Delicious and tender Doner Kebab served with fresh vegetables.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 menu-card" data-category="Skewer">
+            <div class="card text-center p-3 shadow-sm">
+              <img src="./images/1q 4 p.png" class="card-img-top mx-auto" alt="Skewer" style="height: 150px; object-fit: contain;">
+              <div class="card-body">
+                <p class="card-title fw-medium mb-2">Barbecue Shish kebab Shashlik Skewer</p>
+                <div class="stars mb-2 text-warning">
+                  ★★★★☆
+                </div>
+                <p class="text-danger fw-bold">$12.00</p>
+                <p class="text-muted">Delicious and tender Doner Kebab served with fresh vegetables.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="news-section">
+    <h1 class="news-title">News</h1>
+    <h2 class="updates-title">Gericht Updates</h2>
+    <div class="news-cards">
+        <div class="card">
+            <img src="./images/paul-hermann-jeiqzOgwwKU-unsplash 2.svg" alt="Grill Image">
+            <div class="card-content">
+                <h3>Tips For Prepping And Caring For Your Grill</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <span class="date">16 Apr 2021</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/paul-hermann-jeiqzOgwwKU-unsplash 2.svg" alt="Grill Image">
+            <div class="card-content">
+                <h3>Tips For Prepping And Caring For Your Grill</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <span class="date">16 Apr 2021</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/paul-hermann-jeiqzOgwwKU-unsplash 2.svg" alt="Grill Image">
+            <div class="card-content">
+                <h3>Tips For Prepping And Caring For Your Grill</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <span class="date">16 Apr 2021</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="view-more">View More</button>
+</section>
+
+
+<section>
+    <div class="photo-section">
+        <div class="row">
+            <div class="col-md-6 text-block">
+                <div class="social-tag">Instagram</div>
+                <h2>Photo Gallery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+                <a href="#" class="see-more">View More</a>
+            </div>
+            <div class="col-md-6">
+                <div class="image-grid">
+                    <div class="photo-item">
+                        <img src="./images/download (1).jpg" alt="Gallery Image 1">
+                        <div class="overlay-effect">
+                            <span class="social-icon"><img src="./images/instagram64.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/michele-blackwell-rAyCBQTH7ws-unsplash 2.svg" alt="Gallery Image 2">
+                        <div class="overlay-effect">
+                            <span class="social-icon"><img src="./images/instagram64.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="./images/paul-hermann-jeiqzOgwwKU-unsplash 2.svg" alt="Gallery Image 3">
+                        <div class="overlay-effect">
+                            <span class="social-icon"><img src="./images/instagram64.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Gallery Image 4">
+                        <div class="overlay-effect">
+                            <span class="social-icon"><img src="./images/instagram64.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="newsletter-box text-center">
+                    <h2 class="newsletter-title">SUBSCRIBE TO OUR NEWSLETTER</h2>
+                    <p class="newsletter-subtitle">And never miss updates!</p>
+                    <form class="newsletter-form d-flex justify-content-center mt-4">
+                        <input type="email" class="form-control me-2" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+
+  
+
+
+
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="footer-title">CONTACT US</h5>
+                <p class="footer-text">9 W 53rd St, London, NY 10019, UK</p>
+                <p class="footer-text">+1 212-344-1230</p>
+                <p class="footer-text">+1 212-555-1230</p>
+            </div>
+
+   
+            <div class="col-md-4 mb-4 mb-md-0 text-center">
+                <div class="footer-logo mb-3">
+                    <img src="./images/image 2.svg" alt="Eat Turkish Logo" class="img-fluid">
+                </div>
+                <p class="footer-quote">"The best way to find yourself is to lose yourself in the service of others."</p>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-md-0 text-center text-md-end">
+                <h5 class="footer-title">WORKING HOURS</h5>
+                <p class="footer-text">Monday-Friday:<br>08:00 am - 12:00 am</p>
+                <p class="footer-text">Saturday-Sunday:<br>07:00 am - 11:00 pm</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <div class="social-icons mb-3">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-copyright">2022 Pop Online. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const filterBtns = document.querySelectorAll(".btn-filter");
+    const cards = document.querySelectorAll(".menu-card");
+  
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filter = btn.getAttribute("data-filter");
+  
+        filterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+  
+        cards.forEach(card => {
+          if (filter === "all" || card.dataset.category === filter) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
